@@ -6,7 +6,7 @@ import React, { useState, FormEvent, useEffect, useRef } from "react";
 const Body = () => {
   const [tema, setTema] = useState("");
 
-  const NEXT_PUBLIC_OPENAI_API_KEY= "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"
+  const NEXT_PUBLIC_OPENAI_API_KEY= "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"
 
   const handleChangeTema = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTema(event.target.value);
