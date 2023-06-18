@@ -6,7 +6,7 @@ import axios from "axios";
 const Body = () => {
   const [tema, setTema] = useState("");
 
-  const NEXT_PUBLIC_OPENAI_API_KEY= "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"
+  const NEXT_PUBLIC_OPENAI_API_KEY= "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"
 
   const handleChangeTema = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTema(event.target.value);
@@ -68,6 +68,10 @@ const Body = () => {
           },
         });
         const json = response.data.choices[0].text as string;
+  
+        // console.log 
+        console.log("Respuesta de la API:", json);
+  
         return json.replace(/\n\n/g, "");
       } catch (error) {
         console.error(error);
@@ -78,7 +82,7 @@ const Body = () => {
       throw error;
     }
   };
-
+  
   
 
   const [preguntasRespuestas, setPreguntasRespuestas] = useState<{ pregunta: string; respuesta: string }[]>([]);
