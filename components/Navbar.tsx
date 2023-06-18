@@ -65,7 +65,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
       <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
         <Modal.Header closeButton style={{ backgroundColor: '#5e9af2', color: 'white', padding: '10px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1>Contactenos</h1>
-          <button onClick={handleCloseModal} style={{ backgroundColor: 'red', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
+          <button onClick={handleCloseModal} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
             Salir
           </button>
         </Modal.Header>
@@ -90,7 +90,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
             <h1 style={{ backgroundColor: '#5e9af2', color: 'white', padding: '5px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', textAlign: 'center', fontSize: '1.5em', fontFamily: 'Arial, sans-serif' }}>
               Sobre nosotros
             </h1>
-            <button onClick={handleCloseAboutModal} style={{ backgroundColor: 'red', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
+            <button onClick={handleCloseAboutModal} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
               Salir
             </button>
           </Modal.Header>
@@ -113,7 +113,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
           <h1 style={{ backgroundColor: '#5e9af2', color: 'white', padding: '5px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', textAlign: 'center', fontSize: '1.5em', fontFamily: 'Arial, sans-serif' }}>
             OpenAi
           </h1>
-          <button onClick={handleCloseAboutOpenAI} style={{ backgroundColor: 'red', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
+          <button onClick={handleCloseAboutOpenAI} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
             Salir
           </button>
         </Modal.Header>

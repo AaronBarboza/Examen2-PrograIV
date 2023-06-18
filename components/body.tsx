@@ -98,7 +98,7 @@ const Body = () => {
       <input type="text" value={tema} onChange={handleChangeTema} style={{ fontSize: '20px' }} />
     </label>
     <br />
-    <button type="submit" style={{ fontSize: '24px', backgroundColor: 'red', color: 'white' }}>
+    <button type="submit" style={{ fontSize: '24px', backgroundColor: '#9f6cba', color: 'white' }}>
       Generar
     </button>
   </form>
