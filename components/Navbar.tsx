@@ -8,35 +8,35 @@ type Props = {
 };
 
 const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
-  // para Contacts
+  // for Contacts
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState("");
 
-  // para Sobre nosotros
+  // for Sobre nosotros
   const [showAboutModal, setShowAboutModal] = useState(false);
 
-  // para OpenAI
+  // for OpenAI
   const [showOpenAIModal, setShowOpenAIModal] = useState(false);
 
-  // para Contacts
+  // for Contacts
   const handleCloseModal = () => setShowModal(false);
 
-  // para Sobre nosotros
+  // for Sobre nosotros
   const handleCloseAboutModal = () => setShowAboutModal(false);
 
-  // para Open AI
+  // for Open AI
   const handleCloseAboutOpenAI = () => setShowOpenAIModal(false);
 
-  // para contactanos
+  // for contactanos
   const handleShowModal = (image: string) => {
     setModalImage(image);
     setShowModal(true);
   };
 
-  // para Sobre nosotros
+  // for Sobre nosotros
   const handleShowAboutModal = () => setShowAboutModal(true);
 
-  // para Open AI
+  // for Open AI
   const handleShowOpenAIModal = () => setShowOpenAIModal(true);
 
   return (
