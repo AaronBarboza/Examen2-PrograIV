@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     <div className="container-fluid">
         <div className="row">
         <div className="col-md-4 col-sm-12">
-            <h5 style={{ backgroundColor: "#a8d0e6", textAlign: "center" }}>Contacto</h5>
+            <h5 style={{ backgroundColor: "#a8d0e6", textAlign: "center" }}>Contacts</h5>
             <ul className="list-unstyled text-small" style={{ display: "flex", justifyContent: "center" }}>
             <a href="https://www.facebook.com/allison.victor.520?mibextid=LQQJ4d" target="_blank" rel="noreferrer" style={{ flex: "1", margin: "0 10px", display: "inline-block" }}>
                 <FontAwesomeIcon icon={faFacebook} size="3x" />

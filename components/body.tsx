@@ -1,5 +1,5 @@
-import React, { useState, FormEvent, useEffect } from "react";
 import axios from "axios";
+import React, { useState, FormEvent, useEffect, useRef } from "react";
 
 
 
@@ -16,7 +16,11 @@ const Body = () => {
     event.preventDefault();
     const preguntasRespuestasGeneradas = await generarPreguntasRespuestas(tema);
     setPreguntasRespuestas(preguntasRespuestasGeneradas);
+  
+    // Desplazarse hasta el final de la lista de preguntas y respuestas
+    endOfListRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  
 
   const generarPreguntasRespuestas = async (tema: string) => {
     const plantillaPreguntas = [
@@ -86,12 +90,13 @@ const Body = () => {
   
 
   const [preguntasRespuestas, setPreguntasRespuestas] = useState<{ pregunta: string; respuesta: string }[]>([]);
+  const endOfListRef = useRef<HTMLDivElement>(null);
 
 
   return (
     
 <div style={{ textAlign: 'center' }}>
-  <h1 style={{ fontSize: '36px', marginBottom: '30px' }}>Generador de Preguntas y Respuestas</h1>
+  <h1 style={{ fontSize: '36px', marginBottom: '30px' }}>Questions and Answers Generator</h1>
   <form onSubmit={handleSubmit}>
     <label>
       <span style={{ fontSize: '24px' }}>Tema:</span>
@@ -99,7 +104,7 @@ const Body = () => {
     </label>
     <br />
     <button type="submit" style={{ fontSize: '24px', backgroundColor: '#9f6cba', color: 'white' }}>
-      Generar
+      Generator
     </button>
   </form>
   <div style={{ marginTop: '50px' }}>

@@ -52,10 +52,10 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
               OpenAI
             </Nav.Link>
             <Nav.Link onClick={handleShowAboutModal} style={{ fontSize: '17px', color: 'white', marginRight: '20px', fontWeight: 'bold' }}>
-              Sobre Nosotros
+              About us
             </Nav.Link>
             <Nav.Link href="#" onClick={() => handleShowModal("/contactus.png")} style={{ fontSize: '17px', color: 'white', marginRight: '20px', fontWeight: 'bold' }}>
-              Contactanos
+              Contact us
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -64,34 +64,34 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
       {/* Modal para Contactanos */}
       <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
         <Modal.Header closeButton style={{ backgroundColor: '#5e9af2', color: 'white', padding: '10px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h1>Contactenos</h1>
+          <h1>Contact us</h1>
           <button onClick={handleCloseModal} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
-            Salir
+            Close
           </button>
         </Modal.Header>
         <Modal.Body>
           <div>
-            <h1>Bienvenido a nuestra aplicación</h1>
-            <p>En esta aplicación consumiremos la API de OpenAI</p>
+            <h1>welcome to our app</h1>
+            <p>In this application we will consume the OpenAI API</p>
             <img src="/contactenos.png" alt="Contactenos" style={{ maxWidth: '300px' }} />
-            <p>Puede contactarnos a través de:</p>
+            <p>You can contact us through:</p>
             <ul>
-              <li>Teléfono: 61330764, 87230078</li>
-              <li>Correo electrónico: aaron.barboza.amador@est.una.ac.cr, allison.victor.vasquez@est.una.ac.cr</li>
+              <li>Telephone: 61330764, 87230078</li>
+              <li>Email: aaron.barboza.amador@est.una.ac.cr, allison.victor.vasquez@est.una.ac.cr</li>
             </ul>
           </div>
         </Modal.Body>
       </Modal>
 
-      {/* Modal para Sobre nosotros */}
+      {/* about us */}
       <Modal show={showAboutModal} onHide={handleCloseAboutModal} size="lg" centered>
         <div style={{ padding: '20px' }}>
           <Modal.Header closeButton style={{ backgroundColor: '#5e9af2', color: 'white', padding: '10px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h1 style={{ backgroundColor: '#5e9af2', color: 'white', padding: '5px', borderRadius: '5px', boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', textAlign: 'center', fontSize: '1.5em', fontFamily: 'Arial, sans-serif' }}>
-              Sobre nosotros
+              About us
             </h1>
             <button onClick={handleCloseAboutModal} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
-              Salir
+              Close
             </button>
           </Modal.Header>
           <Modal.Body>
@@ -99,7 +99,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
               <Card.Img src="/pregunta.png" alt="Preguntas" style={{ maxWidth: '300px', maxHeight: '50vh', objectFit: 'cover' }} />
               <Card.Body>
                 <Card.Title style={{ fontSize: '1.5em' }}>
-                  Esta aplicación fue creada por nosotros y permite ingresar un tema para generar una lista de preguntas importantes y sus respuestas.
+                 This app was created by us and allows you to enter a topic to generate a list of important questions and their answers.
                 </Card.Title>
               </Card.Body>
             </Card>
@@ -114,7 +114,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
             OpenAi
           </h1>
           <button onClick={handleCloseAboutOpenAI} style={{ backgroundColor: '#9f6cba', color: 'white', fontSize: '1.2em', padding: '10px 20px', borderRadius: '5px', border: 'none' }}>
-            Salir
+            Close
           </button>
         </Modal.Header>
         <Modal.Body>
@@ -123,7 +123,7 @@ const MyNavbar = ({ handleSearch, handlePersonal, activeTab }: Props) => {
               <Card.Img src="/chat2.png" alt="Chat" style={{ maxWidth: '300px', maxHeight: '50vh', objectFit: 'cover' }} />
               <Card.Body>
                 <Card.Title style={{ fontSize: '1.5em' }}>
-                 OpenAI es una empresa de inteligencia artificial que desarrolla tecnologías como ChatGPT, un modelo de lenguaje avanzado con capacidad de conversación. ChatGPT es capaz de generar respuestas coherentes y contextuales, facilitando la interacción con los usuarios en diversos escenarios.
+                 OpenAI is an artificial intelligence company that develops technologies like ChatGPT, an advanced language model with conversation capability. ChatGPT is capable of generating coherent and contextual responses, facilitating interaction with users in various scenarios.
                 </Card.Title>
               </Card.Body>
             </Card>
